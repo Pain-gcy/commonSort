@@ -64,6 +64,7 @@ public class BubbleSort {
         System.out.println();
     }
 
+
     public static void main(String[] args) {
         // 初始化一个随机序列
         final int MAX_SIZE = 10;
