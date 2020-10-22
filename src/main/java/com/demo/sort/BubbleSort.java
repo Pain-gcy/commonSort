@@ -48,8 +48,9 @@ public class BubbleSort {
             }
 
             // 如果标志为false，说明本轮遍历没有交换，已经是有序数列，可以结束排序
-            if (false == bChange)
+            if (bChange) {
                 break;
+            }
 
             System.out.format("第 %d 趟：\t", i);
             printAll(list);

@@ -10,7 +10,7 @@ public class ShellSort {
 
 
     /**
-     * 插入排序
+     * 希尔排序
      * @param list
      */
     public void shellSort(int[] list) {

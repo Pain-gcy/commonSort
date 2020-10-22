@@ -173,9 +173,11 @@ public class AVLTree {
         if (T == null) {
             /*  插入新结点，树“长高”，置taller为TRUE */
             Node nNode = new Node(e, EH, null, null, parent);
-            if (e < parent.value) parent.lchild = nNode;
-            else parent.rchild = nNode;
-            tl.taller = TRUE;
+            if (parent != null) {
+                if (e < parent.value) parent.lchild = nNode;
+                else parent.rchild = nNode;
+                tl.taller = TRUE;
+            }
         } else {
             if (e == T.value) {
                 /*  树中已存在和e有相同关键字的结点则不再插入 */

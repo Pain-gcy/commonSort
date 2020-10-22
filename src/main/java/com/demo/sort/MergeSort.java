@@ -5,6 +5,8 @@ package com.demo.sort;
  * @create on  2018-09-27 10:11
  */
 public class MergeSort {
+//    归并排序
+
     public void Merge(int[] array, int low, int mid, int high) {
         int i = low; // i是第一段序列的下标
         int j = mid + 1; // j是第二段序列的下标
